@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  headwindmdmdocker:
+    image: headwindmdmdocker
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes: ['./content:/home/hmdmr']
+      data:
+    ports: 
+      - 8080:8080
